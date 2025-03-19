@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermarked.ai | Protect Against AI Deepfakes</title>
+    <link rel="stylesheet" href="watermarked.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <div class="logo">
+            <svg class="water-drop" viewBox="0 0 24 24" width="40" height="40">
+                <defs>
+                    <linearGradient id="dropGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#33eaff" />
+                        <stop offset="100%" stop-color="#0099cc" />
+                    </linearGradient>
+                    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+                        <feOffset dx="0" dy="1" result="offsetblur" />
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.5" />
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M12,2.5c0,0-6.5,8.2-6.5,13.5c0,3.6,2.9,6.5,6.5,6.5s6.5-2.9,6.5-6.5C18.5,10.7,12,2.5,12,2.5z"
+                    fill="url(#dropGradient)" filter="url(#dropShadow)" />
+                <ellipse cx="9.5" cy="11" rx="1.2" ry="1.5" fill="#ffffff" fill-opacity="0.6" />
+            </svg>
+            <h1>watermarked<span class="highlight">.ai</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScu57PmCzf_a-sIPTbe8D7Uzpey_U59rejiR1oNhmuSIbq6ng/viewform?usp=dialog" target="_blank" class="btn-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Protect Your Audio from AI Exploitation</h1>
+                <p>Watermarked.ai disrupts AI model training with undetectable audio watermarks and detects AI-generated
+                    deepfakes.</p>
+            </div>
+            <div class="hero-image">
+                <div class="waveform">
+                    <!-- Animated waveform will be created with CSS -->
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="audio-comparison" class="audio-comparison">
+            <h2>Hear the <span class="highlight">Difference</span></h2>
+            <p class="section-intro">Listen to the comparison between authentic audio and AI-generated deepfakes. Can
+                you tell which is which?</p>
+
+            <div class="comparison-container">
+                <div class="audio-sample">
+                    <div class="audio-card">
+                        <div class="audio-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Original Recording</h3>
+                        <p>Authentic human voice recording</p>
+                        <div class="simple-audio-player">
+                            <button class="play-button" onclick="toggleAudio('original-audio')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <audio id="original-audio">
+                                <source src="public/Voice.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vs-divider">
+                    <span>VS</span>
+                </div>
+
+                <div class="audio-sample">
+                    <div class="audio-card">
+                        <div class="audio-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Deepfake</h3>
+                        <p>Generated by AI voice cloning technology</p>
+                        <div class="simple-audio-player">
+                            <button class="play-button" onclick="toggleAudio('deepfake-audio')">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <audio id="deepfake-audio">
+                                <source src="public/Voice-deepfake.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="deepfake-threat" class="deepfake-threat">
+            <h2>Why Deepfake Protection <span class="highlight">Can't Wait</span></h2>
+            <p class="section-intro">The threat is real, growing exponentially, and affecting everyone from individuals
+                to major corporations.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Explosive Growth</h3>
+                        <p class="stat-highlight">10x surge</p>
+                        <p>in deepfake fraud since 2022, costing businesses and families millions. Scams skyrocketing by
+                            <span class="highlight">1,740%</span> in North America and <span
+                                class="highlight">1,530%</span> in Asia-Pacific.</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Frighteningly Easy</h3>
+                        <p class="stat-highlight">3 seconds</p>
+                        <p>of audio is all it takes to clone a voice with 85% accuracy. Yet <span
+                                class="highlight">70%</span> of people can't tell real voices from AI clones—and <span
+                                class="highlight">40%</span> would send money to a 'distressed loved one' without
+                            verification.</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Financial Impact</h3>
+                        <p class="stat-highlight">77% of victims</p>
+                        <p>lose money to voice-cloning scams. Worse, <span class="highlight">53%</span> of people
+                            unknowingly provide the raw material for these attacks by sharing their voices online
+                            weekly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="citation">
+                <p>Source: <a href="https://www.security.org/resources/deepfake-statistics/" target="_blank"
+                        rel="noopener noreferrer">Security.org - 2024 Deepfakes Guide and Statistics</a></p>
+            </div>
+
+            <div class="cta-banner">
+                <h3>Don't wait to become a statistic.</h3>
+                <p>Protect your data today with AI-powered watermarks that sabotage deepfakes at the source—before they
+                    sabotage you.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScu57PmCzf_a-sIPTbe8D7Uzpey_U59rejiR1oNhmuSIbq6ng/viewform?usp=dialog" target="_blank" class="btn-primary">Protect Your Data Now</a>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How Watermarked.ai <span class="highlight">Works</span></h2>
+            <div class="how-it-works-content">
+                <p class="section-intro">Our AI-powered solution embeds imperceptible watermarks directly into your data
+                    (text, images, audio, and more) using advanced algorithms. These watermarks act as a silent defense:
+                </p>
+
+                <div class="defense-methods">
+                    <div class="defense-method">
+                        <h3><i class="fas fa-shield-alt"></i> Disruption</h3>
+                        <p>When watermarked data is used to train deepfake models, it actively disrupts the model's
+                            ability to generate convincing forgeries.</p>
+                    </div>
+                    <div class="defense-method">
+                        <h3><i class="fas fa-search"></i> Detection</h3>
+                        <p>Even if a deepfake model bypasses disruption, it unintentionally replicates the watermark in
+                            its outputs. Our platform instantly identifies these markers, exposing synthetic content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Upload Audio</h3>
+                    <p>Upload your audio file to our secure platform.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Apply Watermark</h3>
+                    <p>Our algorithm embeds an inaudible watermark that disrupts AI training.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Download Protected File</h3>
+                    <p>Get your watermarked audio file that sounds identical to humans.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Why Choose <span class="highlight">Watermarked.ai</span></h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Proactive Protection</h3>
+                    <p>Stop deepfakes before they're created—unlike competitors who only react after damage is done.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Customizable Security</h3>
+                    <p>Adjust watermark strength to balance invisibility and robustness, tailored to your needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Multi-Media Defense</h3>
+                    <p>Works seamlessly across text, audio, images, and video—no gaps in your security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Undetectable & Unremovable</h3>
+                    <p>Watermarks stay hidden from humans and resist tampering, even in edited or cropped content.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Try Our <span class="highlight">Services</span></h2>
+
+            <div class="services-tabs">
+                <button
+                    onclick="document.getElementById('individual-tab').style.display='flex'; document.getElementById('api-tab').style.display='none'; document.getElementById('enterprise-tab').style.display='none'; this.classList.add('active'); this.nextElementSibling.classList.remove('active'); this.nextElementSibling.nextElementSibling.classList.remove('active');"
+                    class="tab-btn active" data-tab="individual">Individual</button>
+
+                <button
+                    onclick="document.getElementById('individual-tab').style.display='none'; document.getElementById('api-tab').style.display='flex'; document.getElementById('enterprise-tab').style.display='none'; this.classList.add('active'); this.previousElementSibling.classList.remove('active'); this.nextElementSibling.classList.remove('active');"
+                    class="tab-btn" data-tab="api">API Integration</button>
+
+                <button
+                    onclick="document.getElementById('individual-tab').style.display='none'; document.getElementById('api-tab').style.display='none'; document.getElementById('enterprise-tab').style.display='flex'; this.classList.add('active'); this.previousElementSibling.classList.remove('active'); this.previousElementSibling.previousElementSibling.classList.remove('active');"
+                    class="tab-btn" data-tab="enterprise">Enterprise</button>
+            </div>
+
+            <div class="services-container tab-content active" id="individual-tab">
+                <div class="service-card">
+                    <h3>Watermark Your <span class="highlight">Audio</span></h3>
+                    <p>Add imperceptible watermarks to your audio that prevent AI models from training on your content.
+                    </p>
+                    <div class="upload-container">
+                        <div class="upload-area" id="dropZone">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop your audio file here</p>
+                            <p class="small">or</p>
+                            <button onclick="openContactForm()" class="btn-secondary">Browse Files</button>
+                            <p class="file-info">Supports MP3, WAV, FLAC, M4A (Max 50MB)</p>
+                        </div>
+                        <div class="upload-options">
+                            <h3>Watermark Options</h3>
+                            <div class="option">
+                                <label for="watermarkStrength">Watermark Strength</label>
+                                <input type="range" id="watermarkStrength" min="1" max="10" value="5">
+                                <div class="range-labels">
+                                    <span>Subtle</span>
+                                    <span>Strong</span>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <label for="watermarkType">Watermark Type</label>
+                                <select id="watermarkType">
+                                    <option value="standard">Standard Protection</option>
+                                    <option value="advanced">Advanced Protection</option>
+                                    <option value="maximum">Maximum Protection</option>
+                                </select>
+                            </div>
+                            <button onclick="openContactForm()" class="btn-primary process-btn">Process Audio</button>
+                        </div>
+                    </div>
+                    <div class="detect-container">
+                        <h3>Detect AI <span class="highlight">Deepfakes</span></h3>
+                        <p>Upload suspicious audio to instantly detect if it contains watermark.</p>
+                        
+                        <div class="detection-card">
+                            <div class="detection-header">
+                                <i class="fas fa-robot"></i>
+                                <h3>Detection Results</h3>
+                            </div>
+                            
+                            <div class="detection-content">
+                                <div class="detection-message">
+                                    <p>This audio <strong>contains your watermark</strong> and was generated by AI</p>
+                                </div>
+                                
+                                <div class="audio-visualization">
+                                    <div class="waveform-container">
+                                        <div class="waveform-label">Audio Waveform Analysis</div>
+                                        <div class="waveform-visualization">
+                                            <div class="waveform-bars">
+                                                <!-- Generate 50 bars for the waveform -->
+                                                <div class="waveform-bar"></div>
+                                                <div class="waveform-bar"></div>
+                                                <!-- ... repeat for all 50 bars ... -->
+                                                <div class="waveform-bar watermarked"></div>
+                                                <div class="waveform-bar watermarked"></div>
+                                                <div class="waveform-bar watermarked"></div>
+                                                <div class="waveform-bar"></div>
+                                                <!-- ... more bars ... -->
+                                            </div>
+                                            <div class="watermark-indicator">
+                                                <span class="indicator-dot"></span>
+                                                <span class="indicator-text">Watermark detected</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="detection-info">
+                                    <div class="info-row">
+                                        <div class="info-label">Voice Model:</div>
+                                        <div class="info-value">ElevenLabs v2</div>
+                                    </div>
+                                    <div class="info-row">
+                                        <div class="info-label">Analysis Date:</div>
+                                        <div class="info-value">May 15, 2024</div>
+                                    </div>
+                                    <div class="info-row">
+                                        <div class="info-label">Audio Length:</div>
+                                        <div class="info-value">6:12</div>
+                                    </div>
+                                    <div class="info-row">
+                                        <div class="info-label">Artifacts Detected:</div>
+                                        <div class="info-value">12</div>
+                                    </div>
+                                </div>
+                                
+                                <button onclick="openContactForm()" class="report-button">VIEW DETAILED REPORT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="services-container tab-content" id="api-tab">
+                <div class="service-card api-service">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>API <span class="highlight">Integration</span></h3>
+                    </div>
+                    <p>Our AI-driven API proactively detects deepfakes at upload, preventing fraud and legal risks
+                        before content goes live.</p>
+
+                    <div class="api-features">
+                        <div class="api-feature">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>Seamless Integration</h4>
+                                <p>Simple REST API with comprehensive documentation for easy implementation into your
+                                    existing platforms.</p>
+                            </div>
+                        </div>
+
+                        <div class="api-feature">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div>
+                                <h4>High-Performance</h4>
+                                <p>Process thousands of files per minute with low-latency responses for real-time
+                                    protection.</p>
+                            </div>
+                        </div>
+
+                        <div class="api-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Pre-Upload Screening</h4>
+                                <p>Block AI-generated content before it enters your platform, protecting your users and
+                                    brand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="api-cta">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScu57PmCzf_a-sIPTbe8D7Uzpey_U59rejiR1oNhmuSIbq6ng/viewform?usp=dialog" target="_blank" class="btn-secondary">View Documentation</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScu57PmCzf_a-sIPTbe8D7Uzpey_U59rejiR1oNhmuSIbq6ng/viewform?usp=dialog" target="_blank" class="btn-primary">Get API Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-container tab-content" id="enterprise-tab">
+                <div class="service-card enterprise-service">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Enterprise <span class="highlight">SaaS Platform</span></h3>
+                    </div>
+                    <p>Comprehensive protection for organizations with large content libraries and heightened security
+                        needs.</p>
+
+                    <div class="enterprise-features">
+                        <div class="enterprise-feature">
+                            <div class="feature-number">01</div>
+                            <div class="feature-content">
+                                <h4>Automated Watermarking</h4>
+                                <p>Automatically embed watermarks into large libraries of content with batch processing
+                                    capabilities.</p>
+                            </div>
+                        </div>
+
+                        <div class="enterprise-feature">
+                            <div class="feature-number">02</div>
+                            <div class="feature-content">
+                                <h4>Comprehensive Tracking System</h4>
+                                <p>Constantly scanning web to detect watermarked content. Track content distribution
+                                    comprehensively to ensure your content is used appropriately and legally.</p>
+                            </div>
+                        </div>
+
+                        <div class="enterprise-feature">
+                            <div class="feature-number">03</div>
+                            <div class="feature-content">
+                                <h4>Detailed Detection Reports</h4>
+                                <p>Once detect the content that contains watermark, we will generate detailed detection
+                                    reports that prove your ownership and authenticity of content.</p>
+
+                            </div>
+                        </div>
+
+                        <div class="enterprise-feature">
+                            <div class="feature-number">04</div>
+                            <div class="feature-content">
+                                <h4>Legal Toolkit</h4>
+                                <p>Generate court-admissible reports and pre-formatted DMCA takedown requests to quickly
+                                    address violations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enterprise-cta">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScu57PmCzf_a-sIPTbe8D7Uzpey_U59rejiR1oNhmuSIbq6ng/viewform?usp=dialog" target="_blank" class="btn-primary">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About <span class="highlight">Watermarked.ai</span></h2>
+                <p class="section-intro">We're on a mission to protect authentic voices in an era of AI-generated deepfakes.</p>
+                
+                <div class="about-grid">                  
+                    <div class="about-team">
+                        <h3>Our Team</h3>
+                        <div class="team-grid">
+                            
+                            <div class="team-member">
+                                <div class="member-photo">
+                                    <img src="images/bella.jpg" alt="Bella Bao">
+                                </div>
+                                <h4>Bella Bao</h4>
+                                <p>Product Manager</p>
+                                <p class="member-bio">Passionate about AI and technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-cta">
+                    <h3>Ready to protect your audio?</h3>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScu57PmCzf_a-sIPTbe8D7Uzpey_U59rejiR1oNhmuSIbq6ng/viewform?usp=dialog" target="_blank" class="btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
