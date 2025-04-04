@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dropBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#A0C8FF" />
+      <stop offset="70%" stop-color="#4080D0" />
+      <stop offset="100%" stop-color="#1040A0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background - transparent -->
+  <rect x="0" y="0" width="400" height="400" fill="transparent" />
+  
+  <!-- Pixel grid for the drop - centered design -->
+  <g transform="translate(200, 180)">
+    <!-- Top section -->
+    <rect x="-4" y="-120" width="8" height="8" fill="#4080D0" />
+    
+    <rect x="-12" y="-112" width="8" height="8" fill="#1040A0" />
+    <rect x="-4" y="-112" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-112" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-20" y="-104" width="8" height="8" fill="#1040A0" />
+    <rect x="-12" y="-104" width="8" height="8" fill="#4080D0" />
+    <rect x="-4" y="-104" width="8" height="8" fill="#FFFFFF" />
+    <rect x="4" y="-104" width="8" height="8" fill="#4080D0" />
+    <rect x="12" y="-104" width="8" height="8" fill="#1040A0" />
+    
+    <!-- Upper middle section -->
+    <rect x="-28" y="-96" width="8" height="8" fill="#1040A0" />
+    <rect x="-20" y="-96" width="8" height="8" fill="#1040A0" />
+    <rect x="-12" y="-96" width="8" height="8" fill="#4080D0" />
+    <rect x="-4" y="-96" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-96" width="8" height="8" fill="#4080D0" />
+    <rect x="12" y="-96" width="8" height="8" fill="#1040A0" />
+    <rect x="20" y="-96" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-28" y="-88" width="8" height="8" fill="#1040A0" />
+    <rect x="-20" y="-88" width="8" height="8" fill="#4080D0" />
+    <rect x="-12" y="-88" width="8" height="8" fill="#A0C8FF" />
+    <rect x="-4" y="-88" width="8" height="8" fill="#FFFFFF" />
+    <rect x="4" y="-88" width="8" height="8" fill="#A0C8FF" />
+    <rect x="12" y="-88" width="8" height="8" fill="#4080D0" />
+    <rect x="20" y="-88" width="8" height="8" fill="#1040A0" />
+    
+    <!-- Middle section - widest part -->
+    <rect x="-36" y="-80" width="8" height="8" fill="#1040A0" />
+    <rect x="-28" y="-80" width="8" height="8" fill="#1040A0" />
+    <rect x="-20" y="-80" width="8" height="8" fill="#4080D0" />
+    <rect x="-12" y="-80" width="8" height="8" fill="#4080D0" />
+    <rect x="-4" y="-80" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-80" width="8" height="8" fill="#4080D0" />
+    <rect x="12" y="-80" width="8" height="8" fill="#4080D0" />
+    <rect x="20" y="-80" width="8" height="8" fill="#1040A0" />
+    <rect x="28" y="-80" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-36" y="-72" width="8" height="8" fill="#1040A0" />
+    <rect x="-28" y="-72" width="8" height="8" fill="#4080D0" />
+    <rect x="-20" y="-72" width="8" height="8" fill="#4080D0" />
+    <rect x="-12" y="-72" width="8" height="8" fill="#A0C8FF" />
+    <rect x="-4" y="-72" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-72" width="8" height="8" fill="#A0C8FF" />
+    <rect x="12" y="-72" width="8" height="8" fill="#4080D0" />
+    <rect x="20" y="-72" width="8" height="8" fill="#4080D0" />
+    <rect x="28" y="-72" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-36" y="-64" width="8" height="8" fill="#1040A0" />
+    <rect x="-28" y="-64" width="8" height="8" fill="#4080D0" />
+    <rect x="-20" y="-64" width="8" height="8" fill="#A0C8FF" />
+    <rect x="-12" y="-64" width="8" height="8" fill="#FFFFFF" />
+    <rect x="-4" y="-64" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-64" width="8" height="8" fill="#A0C8FF" />
+    <rect x="12" y="-64" width="8" height="8" fill="#A0C8FF" />
+    <rect x="20" y="-64" width="8" height="8" fill="#4080D0" />
+    <rect x="28" y="-64" width="8" height="8" fill="#1040A0" />
+    
+    <!-- Lower middle section -->
+    <rect x="-36" y="-56" width="8" height="8" fill="#1040A0" />
+    <rect x="-28" y="-56" width="8" height="8" fill="#4080D0" />
+    <rect x="-20" y="-56" width="8" height="8" fill="#4080D0" />
+    <rect x="-12" y="-56" width="8" height="8" fill="#A0C8FF" />
+    <rect x="-4" y="-56" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-56" width="8" height="8" fill="#A0C8FF" />
+    <rect x="12" y="-56" width="8" height="8" fill="#4080D0" />
+    <rect x="20" y="-56" width="8" height="8" fill="#4080D0" />
+    <rect x="28" y="-56" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-36" y="-48" width="8" height="8" fill="#1040A0" />
+    <rect x="-28" y="-48" width="8" height="8" fill="#4080D0" />
+    <rect x="-20" y="-48" width="8" height="8" fill="#4080D0" />
+    <rect x="-12" y="-48" width="8" height="8" fill="#4080D0" />
+    <rect x="-4" y="-48" width="8" height="8" fill="#A0C8FF" />
+    <rect x="4" y="-48" width="8" height="8" fill="#4080D0" />
+    <rect x="12" y="-48" width="8" height="8" fill="#4080D0" />
+    <rect x="20" y="-48" width="8" height="8" fill="#4080D0" />
+    <rect x="28" y="-48" width="8" height="8" fill="#1040A0" />
+    
+    <!-- Bottom section - tapering -->
+    <rect x="-28" y="-40" width="8" height="8" fill="#1040A0" />
+    <rect x="-20" y="-40" width="8" height="8" fill="#1040A0" />
+    <rect x="-12" y="-40" width="8" height="8" fill="#4080D0" />
+    <rect x="-4" y="-40" width="8" height="8" fill="#4080D0" />
+    <rect x="4" y="-40" width="8" height="8" fill="#4080D0" />
+    <rect x="12" y="-40" width="8" height="8" fill="#1040A0" />
+    <rect x="20" y="-40" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-20" y="-32" width="8" height="8" fill="#1040A0" />
+    <rect x="-12" y="-32" width="8" height="8" fill="#1040A0" />
+    <rect x="-4" y="-32" width="8" height="8" fill="#4080D0" />
+    <rect x="4" y="-32" width="8" height="8" fill="#1040A0" />
+    <rect x="12" y="-32" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-12" y="-24" width="8" height="8" fill="#1040A0" />
+    <rect x="-4" y="-24" width="8" height="8" fill="#1040A0" />
+    <rect x="4" y="-24" width="8" height="8" fill="#1040A0" />
+    
+    <!-- Center vertical line -->
+    <rect x="-4" y="-16" width="8" height="8" fill="#4080D0" />
+    <rect x="-4" y="-8" width="8" height="8" fill="#4080D0" />
+    
+    <!-- Water splash/puddle below -->
+    <rect x="-40" y="8" width="8" height="8" fill="#1040A0" />
+    <rect x="-32" y="8" width="8" height="8" fill="#1040A0" />
+    <rect x="-24" y="8" width="8" height="8" fill="#4080D0" />
+    <rect x="-16" y="8" width="8" height="8" fill="#4080D0" />
+    <rect x="-8" y="8" width="8" height="8" fill="#A0C8FF" />
+    <rect x="0" y="8" width="8" height="8" fill="#A0C8FF" />
+    <rect x="8" y="8" width="8" height="8" fill="#A0C8FF" />
+    <rect x="16" y="8" width="8" height="8" fill="#4080D0" />
+    <rect x="24" y="8" width="8" height="8" fill="#4080D0" />
+    <rect x="32" y="8" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-32" y="16" width="8" height="8" fill="#1040A0" />
+    <rect x="-24" y="16" width="8" height="8" fill="#1040A0" />
+    <rect x="-16" y="16" width="8" height="8" fill="#4080D0" />
+    <rect x="-8" y="16" width="8" height="8" fill="#4080D0" />
+    <rect x="0" y="16" width="8" height="8" fill="#4080D0" />
+    <rect x="8" y="16" width="8" height="8" fill="#4080D0" />
+    <rect x="16" y="16" width="8" height="8" fill="#1040A0" />
+    <rect x="24" y="16" width="8" height="8" fill="#1040A0" />
+    
+    <rect x="-16" y="24" width="8" height="8" fill="#1040A0" />
+    <rect x="-8" y="24" width="8" height="8" fill="#1040A0" />
+    <rect x="0" y="24" width="8" height="8" fill="#1040A0" />
+    <rect x="8" y="24" width="8" height="8" fill="#1040A0" />
+  </g>
+</svg> 
